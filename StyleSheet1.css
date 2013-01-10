@@ -1,0 +1,87 @@
+﻿    body {
+        margin: auto;
+        padding: 0px;
+    }
+
+    table.area_css
+    {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        margin-top: 25px;
+        color: #6cf7b7;
+        font-family: 'Adobe Caslon Pro';
+        font-size: large;
+        border: 1px solid #f39797;
+        border-collapse: collapse;
+    }
+
+    table.area_css td
+    {
+        text-align: center;
+        width: 20px;
+        height: 20px;
+    }
+
+    table.area_css td:hover
+    {
+        cursor: pointer;
+    }
+
+    div.divCss
+    {
+        position: relative;
+        width: 200px;
+        margin: auto;
+        background-color: #fff;
+    }
+
+    div.divCss a
+    {   
+        float: left;
+        padding: 2px;
+		padding-left: 3px;
+		padding-right: 4px;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        border: 1px solid silver;   
+        background-color: #f39797;
+        text-align: center;
+        text-decoration: none;
+        font-family: Candara;
+		font-size: 12px;
+    }
+
+    div.divCss a:hover
+    {
+        border-style: outset;
+    }
+
+    form.formCss
+    {
+        padding-top: 1px;
+        padding-bottom: 9px;
+        display: inline;
+        border: 1px solid silver;
+        background-color: #f39797;
+    }
+
+    form.formCss select
+    {
+        background-color: #ff6a00;
+        border: 1px solid silver;  
+    }
+    form.formCss:hover
+    {
+        border-style: outset;
+    }
+
+    div.divCss h1
+    {
+        text-align: center;
+        color: #f39797;
+        border-radius: 5px;
+        border: 1px solid #f39797;
+    }
