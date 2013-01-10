@@ -1,0 +1,28 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Jasmine Spec Runner</title>
+
+  <link rel="stylesheet" type="text/css" href="lib/jasmine-1.2.0/jasmine.css">
+  <script type="text/javascript" src="lib/jasmine-1.2.0/jasmine.js"></script>
+  <script type="text/javascript" src="lib/jasmine-1.2.0/jasmine-html.js"></script>
+
+  <!-- include source files here... -->
+  <script type="text/javascript" src="JavaScript1.js"></script>
+
+  <!-- include spec files here... -->
+  <script type="text/javascript" src="JavaScript2.js"></script>
+
+
+
+</head>
+<body>
+  <script type="text/javascript">
+  
+  var jasmineEnv = jasmine.getEnv();
+  var reporter = new jasmine.TrivialReporter();
+  jasmineEnv.addReporter(reporter);
+  jasmineEnv.execute();
+  </script>
+</body>
+</html>
