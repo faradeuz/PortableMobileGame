@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Веб-приложение jQuery Mobile</title>
+<link href="jquery-mobile/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.5.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
+<!-- Подключение необходимых функциональных библиотек -->
+<script type="text/javascript" src="JavaScript2.js"></script>
+<script type="text/javascript" src="JavaScript1.js"></script>
+<!-- Визуализация элементов игры -->
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>ПЯТНАШКИ</h1>
+	</div>
+	<div data-role="list-divider">	
+		<ul data-role="listview">
+			<li><a href="#page2">Начать игру</a></li>
+            <li><a href="#page3">Настройки</a></li>
+			<li><a href="#page4">О программе</a></li>
+            <li><a href="#page5">Выход</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>GAME</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>Страница 2</h1>
+	</div>
+	<div data-role="content">	
+		    <!-- Игровое поле -->
+    <div class="divCss" data-role="collapsible-set">
+        <header>
+            <h1>ПЯТНАШКИ</h1>
+        </header>
+        <a href="#" onclick="reload_rand()" >Генерить</a>
+        <a href="#" onclick="next_image()" >Следующий пазл</a>
+        <a href="#" onclick="reset_image()">Сброс</a>
+<!--        <form class="formCss">
+            <select>
+                <optgroup label="Цвет фона">
+                    <option>Фон&nbsp; 1</option>
+                    <option>Фон&nbsp; 2</option>
+                    <option>Фон&nbsp; 3</option>
+                    <option>Фон&nbsp; 4</option>
+                    <option>Фон&nbsp; 5</option>
+                </optgroup>
+            </select>
+        </form>-->
+        <table border="0" class="area_css" id="tbl">
+            <tbody>
+                <tr>
+                    <td id="pic1" onmousedown="eventMouse(id, 0, 0)"></td>
+                    <td id="pic2" onmousedown="eventMouse(id, 0, 1)"></td>
+                    <td id="pic3" onmousedown="eventMouse(id, 0, 2)"></td>
+                    <td id="pic4" onmousedown="eventMouse(id, 0, 3)"></td>
+                </tr>
+                <tr>
+                    <td id="pic5" onmousedown="eventMouse(id, 1, 0)"></td>
+                    <td id="pic6" onmousedown="eventMouse(id, 1, 1)"></td>
+                    <td id="pic7" onmousedown="eventMouse(id, 1, 2)"></td>
+                    <td id="pic8" onmousedown="eventMouse(id, 1, 3)"></td>
+                </tr>
+                <tr>
+                    <td id="pic9"  onmousedown="eventMouse(id, 2, 0)"></td>
+                    <td id="pic10" onmousedown="eventMouse(id, 2, 1)"></td>
+                    <td id="pic11" onmousedown="eventMouse(id, 2, 2)"></td>
+                    <td id="pic12" onmousedown="eventMouse(id, 2, 3)"></td>
+                </tr>
+                <tr>
+                    <td id="pic13" onmousedown="eventMouse(id, 3, 0)"></td>
+                    <td id="pic14" onmousedown="eventMouse(id, 3, 1)"></td>
+                    <td id="pic15" onmousedown="eventMouse(id, 3, 2)"></td>
+                    <td id="pic16" onmousedown="eventMouse(id, 3, 3)"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>		
+	</div>
+	<div data-role="footer">
+		<h4>Нижний колонтитул</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Настройки приложения</h1>
+	</div>
+	<div data-role="content">
+    <form style="width: 100px">	
+        <table border="0" style="width: 100px">
+            <tr><td>Анимация</td><td><input type="checkbox" /></td></tr>
+            <tr><td>-</td><td><input type="checkbox" /></td></tr>
+            <tr><td>-</td><td><input type="checkbox" /></td></tr>
+        </table>
+    </form>	
+	</div>
+	<div data-role="footer">
+		<h4>Нижний колонтитул</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Страница 4</h1>
+	</div>
+	<div data-role="content">	
+		<h6>Проект v1.0</h6>
+        <h6>Автор Федак Е.В.</h6>		
+	</div>
+	<div data-role="footer">
+		<h4>Нижний колонтитул</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page5">
+	<div data-role="header">
+		<h1>Страница 4</h1>
+	</div>
+	<div data-role="content">	
+	</div>
+	<div data-role="footer">
+		<h4>Нижний колонтитул</h4>
+	</div>
+</div>
+
+</body>
+</html>
